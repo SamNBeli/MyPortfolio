@@ -1,0 +1,234 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Mine</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+
+  <body>
+    <div class="bg"></div>
+    <div class="bg-box-fr">
+      <header class="primary-header">
+        <div class="container">
+          <div class="nav-wrapper">
+            <a href="#"><img src="images/Logo.svg" alt="Mine" /></a>
+            <button
+              class="mobile-nav-toggle"
+              aria-controls="primary-navigation"
+              aria-expanded="false"
+            >
+              <img
+                class="icon-hamburger"
+                src="images/icon-hamburger.svg"
+                alt=""
+                aria-hidden="true"
+              />
+              <img
+                class="icon-close"
+                src="images/icon-close.svg"
+                alt=""
+                aria-hidden="true"
+              />
+              <span class="visually-hidden">Menu</span>
+            </button>
+            <nav class="primary-navigation" id="primary-navigation"
+            >
+              <ul
+                aria-label="Primary"
+                role="list"
+                class="nav-list"
+              >
+                <li><a href="#about">About</a></li>
+                <li><a href="#service">Service</a></li>
+                <li><a href="#work">Work</a></li>
+              </ul>
+            </nav>
+            <button onclick="window.location.href='//github.com/SamNBeli';" class="button-nav | display-sm-none display-md-inline-flex"><img src="images/github.png" alt=""></button>
+          </div>
+        </div>
+      </header>
+
+      <main>
+        <section class="padding-block-400">
+          <div class="container">
+            <div class="even-columns home-v">
+              <div class="home-v-l">
+                <h1 class="fs-sub-title fw-bold">Hello! I'm</h1>
+                <h1 class="fs-title fw-bold" style="color: var(--clr-accent-orange);">Sam-Néri Bélizaire</h1>
+                <p>IOS and WEB Developer</p>
+                <button onclick="window.location.href='//morning-position-bd8.notion.site/Sam-N-ri-B-lizaire-d5a3c0b0ff0045f0bbd7062021ef0f23';" class="button">Online Resume</button>
+              </div>
+              <div class="home-v-r">
+                <img src="images/avatar.PNG" alt="An IOS Imoji" />
+              </div>
+            </div>
+          </div>
+        </section>
+
+        <section class="padding-block-400">
+          <div class="container">
+            <div>
+              <h1 id="about" class="fs-sub-title fw-bold">About me</h1>
+              <p>
+                I am a graduate in computer science passionate about IOS and WEB
+                development. For me, knowing how to develop a good application
+                means knowing how to properly identify the customer's needs and
+                transforming them into an effective solution. It is also about
+                getting users to have the best experience by offering a clean
+                and easy-to-use interface.
+              </p>
+            </div>
+          </div>
+        </section>
+
+        <section class="padding-block-400">
+          <div class="container">
+            <h1 id="service" class="fs-sub-title fw-bold">
+              Service Provide For My Clients.
+            </h1>
+            <div class="even-columns">
+              <div class="conts">
+                <img src="images/uxui.png" alt="ux/ui icon" />
+                <h1 class="fs-s-sub-title fw-semi-bold">UI/UX Design</h1>
+                <ul>
+                  <p>Landing Pages</p>
+                  <p>Wireframing</p>
+                  <p>Prototyping</p>
+                  <p>Mobile App Design</p>
+                </ul>
+              </div>
+              <div class="conts">
+                <img src="images/app.png" alt="application icon" />
+                <h1 class="fs-s-sub-title fw-semi-bold">IOS Development</h1>
+                <ul>
+                  <p>Native IOS app</p>
+                  <p>Maintenance and support</p>
+                  <p>Core Data/CloudKit</p>
+                  <p>End-To-End Service</p>
+                </ul>
+              </div>
+              <div class="conts">
+                <img src="images/web.png" alt="web icon" />
+                <h1 class="fs-s-sub-title fw-semi-bold">WEB Development</h1>
+                <ul>
+                  <p>Frontend</p>
+                  <p>Backend</p>
+                  <p>Webflow</p>
+                  <p>Wordpress</p>
+                </ul>
+              </div>
+            </div>
+          </div>
+        </section>
+
+        <section class="padding-block-400">
+          <div class="container">
+            <h1 id="work" class="fs-sub-title fw-bold">My Project</h1>
+            <div class="even-columns contp">
+              <div>
+                <p>#IOS #MediaPlayer</p>
+                <h1 class="fs-s-sub-title fw-bold">
+                  Radio Salem International
+                </h1>
+                <p>
+                  An app that are connected to the online radio of RSI using
+                  AVFoundation.
+                </p>
+                <button class="button">See more ›</button>
+                <p class="fs-sup-little fw-bold tags-title" style="margin-bottom: 0.5rem;">
+                  USED STACK:</p>
+                <div class="stack-columns">
+                  <div class="tags">
+                    <p>Swift</p>
+                  </div>
+                  <div class="tags">
+                    <p>SwiftUI</p>
+                  </div>
+                  <div class="tags">
+                    <p>AVFoundation</p>
+                  </div>
+                  <div class="tags">
+                    <p>JSON</p>
+                  </div>
+                </div>
+                <div class="gitsource">
+                  <a href="https://github.com/SamNBeli/RSI">Github: RSI</a>
+                  <a href="https://apps.apple.com/ca/app/rsi-radio-salem-international/id1625799517">| App Store: RSI</a>
+                </div>
+              </div>
+              <div>
+                <img
+                  src="images/presrsi.png"
+                  alt="Images descriptif de l'application RSI"
+                />
+              </div>
+            </div>
+
+            <div class="even-columns contp">
+              <div>
+                <p>#WEB #API</p>
+                <h1 class="fs-s-sub-title fw-bold">
+                  WEB Compilator for JAVA
+                </h1>
+                <p>
+                  A WEB application that rely on an API to compile JAVA code on a Web Page and provide some important information such as the result, the execution status and possible error.
+                </p>
+                <button class="button">See more ›</button>
+                <p class="fs-sup-little fw-bold tags-title" style="margin-bottom: 0.5rem;">
+                  USED STACK:</p>
+                <div class="stack-columns">
+                  <div class="tags">
+                    <p>JAVA</p>
+                  </div>
+                  <div class="tags">
+                    <p>HTML/CSS/JS</p>
+                  </div>
+                  <div class="tags">
+                    <p>JSON</p>
+                  </div>
+                  <div class="tags">
+                    <p>JSHELL</p>
+                  </div>
+                  <div class="tags">
+                    <p>SpringBoot</p>
+                  </div>
+                </div>
+                <div class="gitsource">
+                  <a href="https://github.com/SamNBeli/Clients-de-test/tree/main/WebComp">Github: Frontend</a>
+                  <a href="https://github.com/SamNBeli/Compilateur_JAVA_API">| Github: Backend</a>
+                </div>
+              </div>
+
+              <div>
+                <img
+                  src="images/presComp.png"
+                  alt="Images descriptif de l'application Compilator"
+                />
+              </div>
+            </div>
+          </div>
+        </section>
+
+        <section class="padding-block-400">
+          <div class="container">
+            <div class="bott-v">
+              
+                <p>samneribelizaire@icloud.com</p>
+                <p>(819) 329 9857
+                <p>Gatineau, QC, CA</p>
+                <p class="bott-l"><a href="https://www.linkedin.com/in/sam-néri-bélizaire-b15a8b203/"><img src="images/linkd.png" alt="Liens vers LinkedIn" /></a>
+                    <a href="https://www.behance.net/sam-nriblizaire"><img src="images/behance.png" alt="Liens vers Behance" /></a></p>
+
+
+            </div>
+          </div>
+        </section>
+      </main>
+    </div>
+    
+
+    <script type="module" src="/main.js"></script>
+  </body>
+</html>
