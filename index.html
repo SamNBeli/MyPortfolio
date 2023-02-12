@@ -1,225 +1,278 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Mine</title>
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" type="image/x-icon" href="{% static 'myportfolio/media/favic.png' %}">
     <link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin><link href="https://fonts.googleapis.com/css2?family=Lato:wght@700&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="style.css" />
-  </head>
-
-  <body>
-    <div class="bg"></div>
-    <div class="bg-box-fr">
-      <header class="primary-header">
-        <div class="container">
-          <div class="nav-wrapper">
-            <a href="#"><img width="30px" src="images/Logo-Mine.svg" alt="Mine" /></a>
-            <button
-              class="mobile-nav-toggle"
-              aria-controls="primary-navigation"
-              aria-expanded="false"
-            >
-              <img
-                class="icon-hamburger"
-                src="images/icon-hamburger.svg"
-                alt=""
-                aria-hidden="true"
-              />
-              <img
-                class="icon-close"
-                src="images/icon-close.svg"
-                alt=""
-                aria-hidden="true"
-              />
-              <span class="visually-hidden">Menu</span>
-            </button>
-            <nav class="primary-navigation" id="primary-navigation"
-            >
-              <ul
-                aria-label="Primary"
-                role="list"
-                class="nav-list"
-              >
-                <li><a href="#about">About</a></li>
-                <li><a href="#service">Service</a></li>
-                <li><a href="#work">Work</a></li>
-              </ul>
-            </nav>
-            <button onclick="window.location.href='//github.com/SamNBeli';" class="button-nav | display-sm-none display-md-inline-flex"><img width="25px" src="images/github.svg" alt=""></button>
-          </div>
-        </div>
-      </header>
-
-      <main>
-        <section class="padding-block-400">
-          <div class="container">
-            <div class="even-columns home-v">
-              <div class="home-v-l">
-                <h1 class="fs-sub-title fw-bold">Hello! I'm</h1>
-                <h1 class="fs-title fw-bold" style="color: var(--clr-accent-orange);">Sam-Néri Bélizaire</h1>
-                <p>IOS and WEB Developer</p>
-                <button onclick="window.location.href='//morning-position-bd8.notion.site/Sam-N-ri-B-lizaire-d5a3c0b0ff0045f0bbd7062021ef0f23';" class="button">Online Resume</button>
-              </div>
-              <div class="home-v-r">
-                <img src="images/Man2.png" alt="An IOS Imoji" />
-              </div>
-            </div>
-          </div>
-        </section>
-
-        <section class="padding-block-400">
-          <div class="container">
-            <div>
-              <h1 id="about" class="fs-sub-title fw-bold">About me</h1>
-              <p>
-                I am a skilled iOS and web developer with a passion for creating intuitive and user-friendly applications. I have a strong background in computer science and have gained valuable experience working on various development projects over the past few years. I am always eager to learn new technologies and techniques to further improve my skills and develop innovative solutions for my clients. Whether it's creating custom mobile apps or building web platforms, I strive to deliver high-quality and effective results for my clients.
-              </p>
-            </div>
-          </div>
-        </section>
-
-        <section class="padding-block-400">
-          <div class="container">
-            <h1 id="service" class="fs-sub-title fw-bold">
-              Service provide to my clients.
-            </h1>
-            <div class="even-columns">
-              <div class="conts">
-                <img width="38px" src="images/uxui.svg" alt="ux/ui icon" />
-                <h1 class="fs-s-sub-title fw-semi-bold">UI/UX Design</h1>
-                <ul>
-                  <p>Passionate about UX/UI. I design beautiful websites and mobile apps using figma</p>
-                </ul>
-              </div>
-              <div class="conts">
-                <img width="38px" src="images/app.svg" alt="application icon" />
-                <h1 class="fs-s-sub-title fw-semi-bold">IOS Development</h1>
-                <ul>
-                  <p>Proficient in building, testing and improving native IOS applications using Swift and SwiftUI</p>
-                </ul>
-              </div>
-              <div class="conts">
-                <img width="38px" src="images/web.svg" alt="web icon" />
-                <h1 class="fs-s-sub-title fw-semi-bold">WEB Development</h1>
-                <ul>
-                  <p>I develop websites using html, css and js. I also have experience developing web services using SpringBoot (Java) frameworks </p>
-                </ul>
-              </div>
-            </div>
-          </div>
-        </section>
-
-        <section class="padding-block-400">
-          <div class="container">
-            <h1 id="work" class="fs-sub-title fw-bold">My Project</h1>
-            <div class="even-columns contp">
-              <div>
-                <p>#IOS #MediaPlayer</p>
-                <h1 class="fs-s-sub-title fw-bold">
-                  Radio Salem International
-                </h1>
-                <p>
-                  An app that are connected to the online radio of RSI using
-                  AVFoundation.
-                </p>
-                <!--<button class="button">See more ›</button>-->
-                <p class="fs-sup-little fw-bold tags-title" style="margin-bottom: 0.5rem;">
-                  USED STACK:</p>
-                <div class="stack-columns">
-                  <div class="tags">
-                    <p>Swift</p>
-                  </div>
-                  <div class="tags">
-                    <p>SwiftUI</p>
-                  </div>
-                  <div class="tags">
-                    <p>AVFoundation</p>
-                  </div>
-                  <div class="tags">
-                    <p>MessageUI</p>
-                  </div>
-                  <div class="tags">
-                    <p>JSON</p>
-                  </div>
-                </div>
-                <div class="gitsource">
-                  <a href="https://github.com/SamNBeli/RSI">Github: RSI</a>
-                  <a href="https://apps.apple.com/ca/app/rsi-radio-salem-international/id1625799517">| App Store: RSI</a>
-                </div>
-              </div>
-              <div>
-                <img
-                  src="images/presrsi.png"
-                  alt="Images descriptif de l'application RSI"
-                />
-              </div>
-            </div>
-
-            <div class="even-columns contp">
-              <div>
-                <img
-                  src="images/presComp.png"
-                  alt="Images descriptif de l'application Compilator"
-                />
-              </div>
-              <div>
-                <p>#WEB #API</p>
-                <h1 class="fs-s-sub-title fw-bold">
-                  WEB Compilator for JAVA
-                </h1>
-                <p>
-                  A WEB application that uses an API to compile JAVA code on a web page and provide important information such as result, runtime and possible error.
-                </p>
-                <!--<button class="button">See more ›</button>-->
-                <p class="fs-sup-little fw-bold tags-title" style="margin-bottom: 0.5rem;">
-                  USED STACK:</p>
-                <div class="stack-columns">
-                  <div class="tags">
-                    <p>JAVA</p>
-                  </div>
-                  <div class="tags">
-                    <p>HTML/CSS/JS</p>
-                  </div>
-                  <div class="tags">
-                    <p>JSON</p>
-                  </div>
-                  <div class="tags">
-                    <p>JSHELL</p>
-                  </div>
-                  <div class="tags">
-                    <p>SpringBoot</p>
-                  </div>
-                </div>
-                <div class="gitsource">
-                  <a href="https://github.com/SamNBeli/Clients-de-test/tree/main/WebComp">Github: Frontend</a>
-                  <a href="https://github.com/SamNBeli/Compilateur_JAVA_API">| Github: Backend</a>
-                </div>
-              </div>
-
-
-            </div>
-          </div>
-        </section>
-
-        <section class="padding-block-400">
-          <div class="container">
-            <div class="bott-v">
-              
-                <p>samneribelizaire@icloud.com</p>
-                <p>(819) 329 9857
-                <p>Gatineau, QC, CA</p>
-                <p class="bott-l"><a href="https://www.linkedin.com/in/sam-néri-bélizaire-b15a8b203/"><img width="38px" src="images/linkd.svg" alt="Liens vers LinkedIn " /></a>
-                    <a href="https://www.behance.net/sam-nriblizaire"><img width="38px" src="images/behance.svg" alt="Liens vers Behance" /></a></p>
-
-
-            </div>
-          </div>
-        </section>
-      </main>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD" crossorigin="anonymous">
+    <link rel="stylesheet" href="style.css">
+    <title>Sam-Néri Bélizaire</title>
+</head>
+<body>
+  <!--NAVBAR*************************************************************************************************-->
+  <nav class="navbar navbar-expand-lg bg-black"> 
+    <div class="container">
+      <h2 class="navbar-brand" style="color: white;">Sam-Néri Bélizaire</h2>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarTogglerDemo02" aria-controls="navbarTogglerDemo02" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarTogglerDemo02">
+        <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                    <!--  
+                        <li class="nav-item">
+                            <a class="nav-link active" aria-current="page" href="#">Home</a>
+                        </li> 
+                    -->
+        </ul> 
+        <ul class="navbar-nav">
+          <li class="nav-item">
+            <a class="nav-link" href="">
+              <img src="images/gt.png" width="30" alt="My image">
+            </a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="">
+              <img src="images/lk.png" width="30" alt="My image">
+            </a>
+          </li>
+        </ul>
+      </div>
     </div>
-    
+  </nav>
+  <!--/NAVBAR*************************************************************************************************-->
 
-    <script type="module" src="/main.js"></script>
-  </body>
+  <!--BODY*************************************************************************************************-->
+  <main class="main-container">
+    <!--HERO*************************************************************************************************-->
+    <div class="hero-bcg">
+      <section class="hero-section">
+        <div class="container">
+          <p class="hero-intro">Empowering companies to tackle complex challenges through innovative web and mobile development solutions.</p>
+        </div>
+      </section>
+    </div>
+    <!--/HERO*************************************************************************************************-->
+
+    <!--PROJECT*************************************************************************************************-->
+    <article class="container project-section">
+      <p class="prj-sec-title">Project</p>
+      <ul class="nav nav-pills mb-3 justify-content-center" id="pills-tab" role="tablist">
+        <li class="nav-item" role="presentation">
+          <button class="nav-link active" id="pills-all-tab" data-bs-toggle="pill" data-bs-target="#pills-all" type="button" role="tab" aria-controls="pills-all" aria-selected="true">All</button>
+        </li>
+        <li class="nav-item" role="presentation">
+          <button class="nav-link" id="pills-web-tab" data-bs-toggle="pill" data-bs-target="#pills-web" type="button" role="tab" aria-controls="pills-web" aria-selected="false">Web</button>
+        </li>
+        <li class="nav-item" role="presentation">
+          <button class="nav-link" id="pills-mobile-tab" data-bs-toggle="pill" data-bs-target="#pills-mobile" type="button" role="tab" aria-controls="pills-mobile" aria-selected="false">Mobile</button>
+        </li>
+      </ul>
+      <div class="tab-content" id="pills-tabContent">
+        <div class="tab-pane fade show active" id="pills-all" role="tabpanel" aria-labelledby="pills-all-tab" tabindex="0">
+          <section class="padding-block-400">
+            <div class="contsec"> <!-- PJ1 -->
+              <div class="even-columns contp">
+                <div class="info">
+                  <div class="stack-columns">
+                    <div>
+                      <p class="prj-tags">#IOS</p>
+                    </div>
+                    <div>
+                      <p class="prj-tags">#MEDIA</p>
+                    </div>
+                  </div>
+                  <p class="prj-title">
+                    Radio Salem International
+                  </p>
+                  <p class="prj-desc">
+                    This iOS app allows users to listen to RSI radio and communicate with the them through the app. The user-friendly interface and seamless integration with the company radio make it an ideal tool for staying informed and engaged with the company.
+                  </p>
+                  <!--<button class="button">See more ›</button>-->
+                  <p class="prj-stack-title" style="margin-bottom: 0.5rem;">
+                    USED STACK:
+                  </p>
+                  <div class="stack-columns">
+                    <div>
+                      <p class="prj-stack">Swift</p>
+                    </div>
+                    <div>
+                      <p class="prj-stack">SwiftUI</p>
+                    </div>
+                    <div>
+                      <p class="prj-stack">JSON</p>
+                    </div>
+                    <div>
+                      <p class="prj-stack">AVFoundation</p>
+                    </div>
+                    <div>
+                      <p class="prj-stack">MessageUI</p>
+                    </div>
+                  </div>
+                  <div class="btn-git">
+                    <button class="gitsource" onclick="window.location.href = '' ">Source</button>
+                  </div>
+                </div>
+                <div class="cover">
+                  <img class="pcover" src="images/presRsi.png" alt="Images"/>
+                </div>
+              </div>
+            </div>
+            <div class="contsec"> <!-- PJ2 -->
+              <div class="even-columns contp">
+                <div class="cover">
+                  <img class="pcover" src="images/presComp.png" alt="Images"/>
+                </div>
+                <div class="info">
+                  <div class="stack-columns">
+                    <div>
+                      <p class="prj-tags">#WEB</p>
+                    </div>
+                  </div>
+                  <p class="prj-title">
+                    WEB Compilator for JAVA
+                  </p>
+                  <p class="prj-desc">
+                    This web application utilizes JShell technology to allow users to write and execute Java code directly within the browser. The application provides immediate results, displaying the output of the code, the execution status, and any errors or exceptions that may occur.
+                  </p>
+                  <!--<button class="button">See more ›</button>-->
+                  <p class="prj-stack-title" style="margin-bottom: 0.5rem;">
+                    USED STACK:
+                  </p>
+                  <div class="stack-columns">
+                    <div>
+                      <p class="prj-stack">JAVA</p>
+                    </div>
+                    <div>
+                      <p class="prj-stack">SpringBoot</p>
+                    </div>
+                    <div>
+                      <p class="prj-stack">JSHELL</p>
+                    </div>
+                    <div>
+                      <p class="prj-stack">JSON</p>
+                    </div>
+                  </div>
+                  <div class="btn-git">
+                    <button class="gitsource" onclick="window.location.href = '' ">Source</button>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </section>
+        </div>
+        <div class="tab-pane fade" id="pills-web" role="tabpanel" aria-labelledby="pills-web-tab" tabindex="0">
+          <div class="contsec"> <!-- PJ1 W -->
+            <div class="even-columns contp">
+              <div class="info">
+                <div class="stack-columns">
+                  <div>
+                    <p class="prj-tags">#WEB</p>
+                  </div>
+                </div>
+                <p class="prj-title">
+                  WEB Compilator for JAVA
+                </p>
+                <p class="prj-desc">
+                  This web application utilizes JShell technology to allow users to write and execute Java code directly within the browser. The application provides immediate results, displaying the output of the code, the execution status, and any errors or exceptions that may occur.
+                </p>
+                <!--<button class="button">See more ›</button>-->
+                <p class="prj-stack-title" style="margin-bottom: 0.5rem;">
+                  USED STACK:
+                </p>
+                <div class="stack-columns">
+                  <div>
+                    <p class="prj-stack">JAVA</p>
+                  </div>
+                  <div>
+                    <p class="prj-stack">SpringBoot</p>
+                  </div>
+                  <div>
+                    <p class="prj-stack">JSHELL</p>
+                  </div>
+                  <div>
+                    <p class="prj-stack">JSON</p>
+                  </div>
+                </div>
+                <div class="btn-git">
+                  <button class="gitsource" onclick="window.location.href = '' ">Source</button>
+                </div>
+              </div>
+              <div class="cover">
+                <img class="pcover" src="images/presComp.png" alt="Images"/>
+              </div>
+            </div>
+          </div>
+        </div>      
+        <div class="tab-pane fade" id="pills-mobile" role="tabpanel" aria-labelledby="pills-mobile-tab" tabindex="0">
+          <div class="contsec"> <!-- PJ1 -->
+            <div class="even-columns contp">
+              <div class="info">
+                <div class="stack-columns">
+                  <div>
+                    <p class="prj-tags">#IOS</p>
+                  </div>
+                  <div>
+                    <p class="prj-tags">#MEDIA</p>
+                  </div>
+                </div>
+                <p class="prj-title">
+                  Radio Salem International
+                </p>
+                <p class="prj-desc">
+                  This iOS app allows users to listen to RSI radio and communicate with the them through the app. The user-friendly interface and seamless integration with the company radio make it an ideal tool for staying informed and engaged with the company.
+                </p>
+                <!--<button class="button">See more ›</button>-->
+                <p class="prj-stack-title" style="margin-bottom: 0.5rem;">
+                  USED STACK:
+                </p>
+                <div class="stack-columns">
+                  <div>
+                    <p class="prj-stack">Swift</p>
+                  </div>
+                  <div>
+                    <p class="prj-stack">SwiftUI</p>
+                  </div>
+                  <div>
+                    <p class="prj-stack">JSON</p>
+                  </div>
+                  <div>
+                    <p class="prj-stack">AVFoundation</p>
+                  </div>
+                  <div>
+                    <p class="prj-stack">MessageUI</p>
+                  </div>
+                </div>
+                <div class="btn-git">
+                  <button class="gitsource" onclick="window.location.href = '' ">Source</button>
+                </div>
+              </div>
+              <div class="cover">
+                <img class="pcover" src="images/presRsi.png" alt="Images"/>
+              </div>
+            </div>
+          </div>
+        </div>      
+      </div>
+    </article>
+    <!--/PROJECT*************************************************************************************************-->
+  </main>
+  <!--/BODY*************************************************************************************************-->
+
+  <!--FOOTER*************************************************************************************************-->
+  <footer class="bg-black py-3">
+    <div class="container">
+      <div class="footer-info d-flex justify-content-around flex-wrap">
+        <p>(819)329-9857</p>
+        <p>samneribelizaire@icloud.com</p>
+        <p>Gatineau, QC, CA</p>
+      </div>
+    </div>
+  </footer>
+  <!--/FOOTER*************************************************************************************************-->
+  <script 
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js" integrity="sha384-w76AqPfDkMBDXo30jS1Sgez6pr3x5MlQ1ZAGC+nuZB+EYdgRZgiwxhTBTkF7CXvN" crossorigin="anonymous">
+  </script>
+</body>
 </html>
