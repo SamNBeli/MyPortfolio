@@ -3,6 +3,7 @@
   --clr-primary-black: rgb(0, 0, 0);
   --clr-secondary-gray: rgb(95, 95, 95);
   --clr-accent-orange: rgb(228, 68, 0);
+  --clr-accent-blue: rgb(56, 0, 255);
   --clr-background-front: rgb(255, 255, 255);
   --clr-background-rear: rgb(245, 245, 247);
 
@@ -50,14 +51,14 @@ a:not([class]) {
 
 a:link{
   text-decoration: none;
-  color: var(--clr-accent-orange)
+  color: var(--clr-accent-blue)
 }
 a:hover{
   text-decoration: underline;
 }
 
 a:visited{
-  color: var(--clr-accent-orange)
+  color: var(--clr-accent-blue)
 }
 
 /* Make images easier to work with */
@@ -70,7 +71,7 @@ border-radius: 10px;
 }
 
 .nav-link.active {
-  background-color: var(--clr-accent-orange) !important;
+  background-color: var(--clr-accent-blue) !important;
 }
 
 .nav-link {
@@ -78,16 +79,16 @@ border-radius: 10px;
 }
 
 .nav-link:hover {
-  color: var(--clr-accent-orange);
+  color: var(--clr-accent-blue);
 }
 
 .contp{
-  /*background: var(--clr-background-front);
-  border-radius: 10px;*/
+  background: var(--clr-background-front);
+  border-radius: 10px;
   /*box-shadow: 0px 0px 10px 10px rgba(238, 238, 238, 0.587);*/
   justify-content: center;
-  padding-top: 2rem;
-  padding-bottom: 3rem;
+  margin-top: 1rem;
+  padding: 1rem;
 }
 
 .info{
@@ -105,7 +106,7 @@ border-radius: 10px;
 }
 
 .gitsource{
-  background-color: var(--clr-accent-orange);
+  background-color: var(--clr-accent-blue);
   border: none;
   color: white;
   padding: 0.5rem 1rem;
@@ -159,7 +160,7 @@ border-radius: 10px;
 }
 
 .prj-stack{
-  background: var(--clr-background-front);
+  background: var(--clr-background-rear);
   padding: 0.2rem 0.5rem;
   border-radius: 5px;
   font-size: var(--fs-x-sub-title);
@@ -236,7 +237,11 @@ border-radius: 10px;
 
 
 .hero-bcg{
-  background-color: #000000;
+  background-image: url(images/Bcg-Hro.jpeg);
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  /*background-color: #000000;*/
 }
 
 .fw-bold{
