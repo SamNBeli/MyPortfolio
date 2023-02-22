@@ -133,13 +133,40 @@ border-radius: 10px;
   text-align: center;
   padding-top: 15rem;
   padding-bottom: 15rem;
-  margin-bottom: 4rem;
+  margin-bottom: -1rem;
   color: rgb(255, 255, 255);
   font-size: var(--fs-title);
   font-weight: var(--fw-bold);
 }
 
-.prj-sec-title{
+.skill-section{
+  padding: 3rem;
+}
+
+.sk-cont {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+}
+
+.sk-icon {
+  margin: 0 10px;
+}
+
+.sk-icons {
+  width: 100%;
+  max-width: 100px;
+}
+
+.sk-sec-title{
+  text-align: center;
+  font-size: var(--fs-title);
+  font-weight: var(--fw-bold);
+  color: white;
+  padding-bottom: 1.5rem;
+}
+
+.pj-sec-title{
   text-align: center;
   font-size: var(--fs-title);
   font-weight: var(--fw-bold);
@@ -185,14 +212,19 @@ border-radius: 10px;
       font-size: var(--fs-sub-title);
       padding-top: 4rem;
       padding-bottom: 4rem;
-      margin-bottom: 2rem;
       color: rgb(255, 255, 255);
   }
 
-  .prj-sec-title{
+  .sk-sec-title{
       font-size: var(--fs-phone-title);
       font-weight: var(--fw-bold);
+      padding-bottom: 0.5rem;
   }
+
+  .pj-sec-title{
+    font-size: var(--fs-phone-title);
+    font-weight: var(--fw-bold);
+}
 
   .prj-tags{
       color: var(--clr-secondary-gray);
@@ -242,6 +274,11 @@ border-radius: 10px;
   background-position: center;
   background-repeat: no-repeat;
   /*background-color: #000000;*/
+}
+
+.skill-bcg{
+  background-color: black;
+  margin-bottom: 4rem;
 }
 
 .fw-bold{

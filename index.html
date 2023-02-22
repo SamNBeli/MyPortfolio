@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="shortcut icon" type="image/x-icon" href="{% static 'myportfolio/media/favic.png' %}">
+    <link rel="icon" type="image/png" href="images/favic.png">
     <link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin><link href="https://fonts.googleapis.com/css2?family=Lato:wght@700&display=swap" rel="stylesheet">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD" crossorigin="anonymous">
     <link rel="stylesheet" href="style.css">
@@ -55,9 +55,30 @@
     </div>
     <!--/HERO*************************************************************************************************-->
 
+    <section class="skill-bcg skill-section">
+      <p class="sk-sec-title">My special skills</p>
+      <div class="container sk-cont">
+          <div class="sk-icon">
+            <img class="sk-icons" src="/images/react.svg" alt="React JS">
+          </div>
+          <div class="sk-icon">
+            <img class="sk-icons" src="/images/django.svg" alt="Django">
+          </div>
+          <div class="sk-icon">
+            <img class="sk-icons" src="/images/python.svg" alt="Python">
+          </div>
+          <div class="sk-icon">
+            <img class="sk-icons" src="/images/postgresql.svg" alt="Postgresql">
+          </div>
+          <div class="sk-icon">
+            <img class="sk-icons" src="/images/git.svg" alt="Git">
+          </div>
+      </div>
+    </section>
+
     <!--PROJECT*************************************************************************************************-->
     <article class="container project-section">
-      <p class="prj-sec-title">Project</p>
+      <p class="pj-sec-title">Project</p>
       <ul class="nav nav-pills mb-3 justify-content-center" id="pills-tab" role="tablist">
         <li class="nav-item" role="presentation">
           <button class="nav-link active" id="pills-all-tab" data-bs-toggle="pill" data-bs-target="#pills-all" type="button" role="tab" aria-controls="pills-all" aria-selected="true">All</button>
@@ -77,17 +98,14 @@
                 <div class="info">
                   <div class="stack-columns">
                     <div>
-                      <p class="prj-tags">#IOS</p>
-                    </div>
-                    <div>
-                      <p class="prj-tags">#MEDIA</p>
+                      <p class="prj-tags">#WEB</p>
                     </div>
                   </div>
                   <p class="prj-title">
-                    Radio Salem International
+                    WIKI, Encyclopedia Website
                   </p>
                   <p class="prj-desc">
-                    This iOS app allows users to listen to RSI radio and communicate with the them through the app. The user-friendly interface and seamless integration with the company radio make it an ideal tool for staying informed and engaged with the company.
+                    A functional encyclopedia website with Python that allows users to browse, search, create, edit, and navigate to entries. The site features Markdown-to-HTML conversion for easy text formatting.
                   </p>
                   <!--<button class="button">See more ›</button>-->
                   <p class="prj-stack-title" style="margin-bottom: 0.5rem;">
@@ -95,27 +113,27 @@
                   </p>
                   <div class="stack-columns">
                     <div>
-                      <p class="prj-stack">Swift</p>
+                      <p class="prj-stack">Python</p>
                     </div>
                     <div>
-                      <p class="prj-stack">SwiftUI</p>
+                      <p class="prj-stack">Django</p>
                     </div>
                     <div>
-                      <p class="prj-stack">JSON</p>
+                      <p class="prj-stack">Markdown 2</p>
                     </div>
                     <div>
-                      <p class="prj-stack">AVFoundation</p>
+                      <p class="prj-stack">HTML/CSS</p>
                     </div>
                     <div>
-                      <p class="prj-stack">MessageUI</p>
+                      <p class="prj-stack">Bootstrap</p>
                     </div>
                   </div>
                   <div class="btn-git">
-                    <button class="gitsource" onclick="window.location.href = 'https://github.com/SamNBeli/RSI' ">Source</button>
+                    <button class="gitsource" onclick="window.location.href = 'https://github.com/SamNBeli/Wiki' ">Source</button>
                   </div>
                 </div>
                 <div class="cover">
-                  <img class="pcover" src="images/presRsi.png" alt="Images"/>
+                  <img class="pcover" src="images/Wiki.png" alt="Images"/>
                 </div>
               </div>
             </div>
@@ -165,14 +183,17 @@
                 <div class="info">
                   <div class="stack-columns">
                     <div>
-                      <p class="prj-tags">#WEB</p>
+                      <p class="prj-tags">#IOS</p>
+                    </div>
+                    <div>
+                      <p class="prj-tags">#MEDIA</p>
                     </div>
                   </div>
                   <p class="prj-title">
-                    WIKI, Encyclopedia Website
+                    Radio Salem International
                   </p>
                   <p class="prj-desc">
-                    A functional encyclopedia website with Python that allows users to browse, search, create, edit, and navigate to entries. The site features Markdown-to-HTML conversion for easy text formatting.
+                    This iOS app allows users to listen to RSI radio and communicate with the them through the app. The user-friendly interface and seamless integration with the company radio make it an ideal tool for staying informed and engaged with the company.
                   </p>
                   <!--<button class="button">See more ›</button>-->
                   <p class="prj-stack-title" style="margin-bottom: 0.5rem;">
@@ -180,27 +201,27 @@
                   </p>
                   <div class="stack-columns">
                     <div>
-                      <p class="prj-stack">Python</p>
+                      <p class="prj-stack">Swift</p>
                     </div>
                     <div>
-                      <p class="prj-stack">Django</p>
+                      <p class="prj-stack">SwiftUI</p>
                     </div>
                     <div>
-                      <p class="prj-stack">Markdown 2</p>
+                      <p class="prj-stack">JSON</p>
                     </div>
                     <div>
-                      <p class="prj-stack">HTML/CSS</p>
+                      <p class="prj-stack">AVFoundation</p>
                     </div>
                     <div>
-                      <p class="prj-stack">Bootstrap</p>
+                      <p class="prj-stack">MessageUI</p>
                     </div>
                   </div>
                   <div class="btn-git">
-                    <button class="gitsource" onclick="window.location.href = 'https://github.com/SamNBeli/Wiki' ">Source</button>
+                    <button class="gitsource" onclick="window.location.href = 'https://github.com/SamNBeli/RSI' ">Source</button>
                   </div>
                 </div>
                 <div class="cover">
-                  <img class="pcover" src="images/Wiki.png" alt="Images"/>
+                  <img class="pcover" src="images/presRsi.png" alt="Images"/>
                 </div>
               </div>
             </div>
