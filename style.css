@@ -151,12 +151,27 @@ border-radius: 10px;
 
 .sk-icon {
   margin: 0 10px;
+  position: relative;
 }
 
 .sk-icons {
   width: 100%;
   max-width: 100px;
 }
+
+.sk-name {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  z-index: 1;
+  color: white;
+  background-color: rgba(0, 0, 0, 0.7);
+  border-radius: 10px;
+  padding-left: 5rem;
+  padding-right: 5rem;
+}
+
 
 .sk-sec-title{
   text-align: center;
@@ -213,6 +228,10 @@ border-radius: 10px;
       padding-top: 4rem;
       padding-bottom: 4rem;
       color: rgb(255, 255, 255);
+  }
+
+  .sk-name {
+    display: none;
   }
 
   .sk-sec-title{
